@@ -1,27 +1,110 @@
 <html>
 	<head>
-		<title> Bueno's Blog </title>
-		<link rel="stylesheet" href="styles.css">
+		<title>Bueno's Blog</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="icon" href="logo.png">
 	</head>
 	<body>
-		<h1>BUENO'S BLOG</h1>
-		<p>Media Information Literacy Compilation</p>
-		<button type="button" onclick="javascript:window.close()">Click here!</button>
-		<!==navigator==>
 		
+		<div class="navbar">
+			<p class="item">MIL COMPILATION</p>
+			<div class="tab center">
+				<button class="tablinks" onclick="openCity(event, 'activities')">Activities</button>
+				<button class="tablinks" onclick="openCity(event, 'attendance')">Attendance</button>
+				<button class="tablinks" onclick="openCity(event, 'menu')">More Menu</button>
+			</div>
+		</div>
+		<br>
 		
-		<!==activities==>
-		<!==documents small preview==>
-		
-		<!==contacts==>
-		<footer>
-			<p>For more information, don't hesitate to message me. Let's be business partners.</p>
-			<p>
-				<a href="mailto:markstephena.bueno@gmail.com?subject=Pogi%20mo%20lodi!">Email me</a> or 
-				<a href="https://www.facebook.com/M4rkerPentelpen">Get motivated!</a>
-			</p>
-				<p>Do you play chess? <a href="hhttps://chess.com/play/Deepseabeard">Play</a> with me!</p>
-		<footer>
-	</body>
+		<div id="header">
+			<h1>MEDIA INFORMATION LITERACY COMPILATION</h1>
+			<span>Mark Stephen A. Bueno</span>
+			<br><br>
+			<p class="click">"Click something..."</p>
+			<p class="tap">"Tap something..."</p>
+		</div>
 
+		<div id="blog">
+			<!--attendance-->
+			<div id="attendance" class="container tabcontent">
+				<div class="content">
+					<p>February 8, 2022 in the afternoon</p>
+					<img src="attendance/pics (1).png">
+					<img src="attendance/pics (13).png">
+				</div>
+				<div class="content">
+					<p>Warm day on February 15, 2022</p>
+					<img src="attendance/pics (2).png">
+				</div>
+				<div class="content">
+					<p><a href="https://open.spotify.com/playlist/1gMM1zYmu5xKf9msnqlgCD?si=0b4bc5003865415f">22222</a></p>
+					<img src="attendance/pics (5).png">
+				</div>
+				<div class="content">
+					<p>Ending of the beginning of March 2022</p>
+					<img src="attendance/pics (3).png">
+					<img src="attendance/pics (4).png">
+					<img src="attendance/pics (6).png">
+				</div>
+				<div class="content">
+					<p>Where am I on March 22, 2022?</p>
+					<img src="attendance/pics (7).png">
+					<img src="attendance/pics (9).png">
+				</div>
+				<div class="content">
+					<p>March 29, 2022 does not smile</p>
+					<img src="attendance/pics (8).png">
+					<img src="attendance/pics (10).png">
+					<img src="attendance/pics (11).png">
+				</div>
+				<div class="content">
+					<p>All is well on the 5th of April</p>
+					<img src="attendance/pics (12).png">
+				</div>
+			</div>
+			
+			<div id="menu" class="container tabcontent">
+			<!--contacts-->
+				<div id="contacts content">
+					<a href="https://www.facebook.com/msab816729435"><img src="logo.png"></a>
+					<p>For more information, don't hesitate to message me. Let's be business partners.</p>
+					<p>
+						<a href="mailto:markstephena.bueno@gmail.com?subject=Pogi%20mo%20lodi!">Email me</a> or 
+						<a href="https://www.facebook.com/M4rkerPentelpen">Get motivated!</a>
+						Let's <a href="https://www.messenger.com/t/M4rkerPentelpen">chat</a>!
+					</p>
+					<p>Do you play chess? <a href="hhttps://chess.com/play/Deepseabeard">Play</a> with me!</p>
+					<p>Feel free to inbox me in case you want to, need something, or maybe I’m the one who needs your help.</p>
+				</div>
+			</div>
+			<!--Activities-->
+			<div id="activities" class="container tabcontent">
+				<div class="content">
+					<p>All of them are <a href="https://drive.google.com/drive/folders/14AaCsUdQ--YaasO2qwk4ySgiU6Odsk3W?usp=sharing">here</a>.</p>
+				</div>
+				
+				<div class="content">
+					<p><a href="https://drive.google.com/file/d/1HUikdUMG4OvoaDDjC0OQYcinzCpTdw9o/view?usp=sharing">Activity 1</a></p>
+					<img src="activities/act-1.png">
+				</div>
+			</div>
+		</div>
+		
+		
+		<script>
+			function openCity(evt, cityName) {
+				var i, tabcontent, tablinks;
+				tabcontent = document.getElementsByClassName("tabcontent");
+				for (i = 0; i < tabcontent.length; i++) {
+					tabcontent[i].style.display = "none";
+				}
+				tablinks = document.getElementsByClassName("tablinks");
+				for (i = 0; i < tablinks.length; i++) {
+					tablinks[i].className = tablinks[i].className.replace(" active", "");
+				}
+				document.getElementById(cityName).style.display = "block";
+				evt.currentTarget.className += " active";
+			}
+		</script>
+	</body>
 </html>
