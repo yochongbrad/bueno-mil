@@ -29,6 +29,10 @@ a, a:active, a:visited {
 	border-bottom: solid 2px gray;
 }
 
+ul li {
+	list-style-type: none;
+}
+
 #blog {
 	max-width: 800px;
 }
