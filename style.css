@@ -20,43 +20,49 @@ a, a:active, a:visited {
 }
 
 .navbar {
-	background-color: white;
-	padding: 1em 1em 0 1em;
+	background-color: #007bff;
+	padding: 1em;
 	position: fixed;
 	width: 100%;
 	margin: 0 auto;
-	text-align: center;
+	text-align: left;
 	border-bottom: solid 2px gray;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.navbar h2 {
+	margin-left: 0.5em;
 }
 
 ul li {
 	list-style-type: none;
 }
 
-#blog {
-	max-width: 800px;
-}
-
 #header {
-	padding: 5em;
+	padding: 7.5em 5em 5em;
 	background: url('header-bg.jpg') no-repeat top;
 	width:100%;
-}
-
-#header * {
+	height: 500px;
 	color: white;
-	font-weight: bold;
+	font-size: 1em;
 }
 
-#header h1 {
-	font-size: 3rem;
-	margin: 1rem;
+h1 {
+	font-size: 3em;
+	margin: 0.5em;
+}
+
+p {
+	font-size: 1em;
 }
 
 .content {
 	margin-top: 1em;
 	background-color: white;
 	padding: 1em 0;
+	font-size: 1em;
+	border-radius: 0.5em;
 }
 
 .center {
@@ -64,63 +70,38 @@ ul li {
 	justify-content: center;
 }
 
-.content p {
+.content p, a, li {
 	margin: 0 1em 1em 1em;
 }
 
-#attendance img {
+.attendance img {
 	max-width: 100%;
 	margin-bottom: 0.5em;
 }
 
-//tabs on navigation
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-	text-align: center;
-	margin: 0 auto;
+.attendance, .activities, .menu {
+	background-color: gray;
+	border-radius: 0.5em;
 }
 
-/* Style the buttons inside the tab */
-.tab button {
-  background-color: inherit;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 1em;
-  transition: 0.3s;
-  font-size: 1em;
+.menu img {
+	width: 75%;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.title {
+	background-color: #0CB0E8;
+	padding: 1em;
+	border-radius: 0.5em 0.5em 0 0;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.laman {
+	padding: 0 1em 1em;
 }
 
-.tabcontent {
-  display: none;
+.title a {
+	color: black;
 }
 
-/*landscapes*/
-@media (min-width: 800px) {
-    .tap {
-	   display: none;
-   }
-   .content {
-		border-radius: 0.5em;
-   }
-}
-
-@media (max-width: 799px) {
-	.click {
-		display: none;
-	}
+.menu p {
+	font-size: 0.8em;
 }

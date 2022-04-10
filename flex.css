@@ -1,0 +1,25 @@
+.blog {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+
+.activities {
+	order: 1;
+	flex-grow: 1;
+}
+
+.attendance {
+	order: 2;
+	flex-grow: 2;
+}
+
+.menu {
+	order: 3;
+	flex-grow: 1;
+}
+
+.tabcontent {
+	margin: 1em;
+	min-width: 300px;
+}
